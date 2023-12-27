@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+header #testa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/40358582-vista-de-un-campo-de-caballo-picadero-utilizado-para-el-entrenamiento-y-la-relajación.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 1;
+  float: none;
+  overflow: hidden;
+}
+body {
+  background-size: cover;
+  background-position: center;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-around;
+  background-color: rgb(223, 188, 144);
+  padding: 5px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5px;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(223, 188, 144);
+}
+section {
+  max-width: 500px;
+  min-width: none;
+  border: none;
+  justify-content: center;
+}
+
+.adorno {
+  width: 500px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 2px solid rgb(184, 181, 181);
+}
+img.horse {
+  width: 496px;
+  height: 331px;
+  border-radius: 10px;
+}
+h1 {
+  display: flex;
+  margin: 10px;
+  height: 42px;
+  border: none;
+}
+p {
+  position: absolute;
+  width: 150px;
+  margin-top: 300px;
+  font-size: large;
+  font-weight: 800;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+input {
+  border-radius: 4px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-width: 389px;
+  border: none;
+}
+input {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 800;
+  margin: auto;
+}
+span {
+  font-size: 18px;
+  font-weight: 800;
+}
+label,
+input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  font-size: large;
+  font-weight: 800;
+}
+/*doluvcionar scroll bar para que se vea*/
+@media screen and (max-width: 630px) {
+  .adorno {
+    transform: scale(0.6);
+  }
+  .horse {
+    transform: scale(0.7);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+@media screen and (max-width: 504px) {
+  h2,
+  ul .horse {
+    transform: scale(0.7);
+  }
+}
