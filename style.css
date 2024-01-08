@@ -125,3 +125,4 @@ label {
     transform: scale(0.7);
   }
 }
+header,body{min-width:497px;}
